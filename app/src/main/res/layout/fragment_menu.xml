@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/col_bluelime"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/lblMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+
+
+
+    <GridView android:id="@+id/pinGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="70dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="4dp"
+        android:stretchMode="columnWidth"
+        android:layout_below="@id/lblMenu"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView android:id="@+id/newGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close Menu"
+        android:layout_below="@id/pinGrid"
+        android:layout_centerHorizontal="true"
+        style="@style/PinMenuBtnSave"
+        />
+    <TextView android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/newGame"
+        android:layout_centerHorizontal="true"
+        style="@style/PinMenuBtnSave"
+        />
+
+    <TextView android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_below="@id/start"
+        android:layout_centerHorizontal="true"
+        style="@style/PinMenuBtnSave"
+        />
+
+
+</RelativeLayout>

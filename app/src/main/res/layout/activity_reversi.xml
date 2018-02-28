@@ -1,0 +1,25 @@
+
+<com.example.godaibo.reversisimulator.PuzzleSlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/sp"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/tilebkg"
+    >
+
+<fragment
+    android:id="@+id/pinMenu"
+    android:name="com.example.godaibo.reversisimulator.MenuFragment"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    />
+
+<fragment
+    android:id="@+id/pinTable"
+    android:name="com.example.godaibo.reversisimulator.ReversiFragment"
+    android:layout_width="600dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:layout_weight="1" />
+
+</com.example.godaibo.reversisimulator.PuzzleSlidingPaneLayout>

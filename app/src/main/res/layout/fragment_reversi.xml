@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigation_bar" >
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_for_menu_button"
+            android:onClick="toggleMenu" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="White - Random: 20"
+        android:id="@+id/whitetextView"
+        android:layout_below="@+id/button_menu"
+        android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/button_menu"
+            android:textStyle="bold"
+            android:textColor="#ff008f3a" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Black - MinMax: 20"
+            android:id="@+id/blackTextView"
+            android:layout_below="@+id/whitetextView"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/button_menu"
+            android:textColor="#ff008f3a" />
+
+    </RelativeLayout>
+    <TextView android:id="@+id/titleMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reversi"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        style="@style/PinMenuBtnSave"
+        android:autoText="false"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <com.example.godaibo.reversisimulator.BoardTable
+        android:id="@+id/pinsTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"/>
+
+</LinearLayout>
